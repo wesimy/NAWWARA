@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+html,
+body {
+  height: 100%;
+}
+body {
+  text-align: center;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  float:left;
+  width: 30%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+	  
+-webkit-transition: width 0.5s; /* Safari */
+    transition: width 0.5s;}
+
+.site-wrapper-active{
+	width:40%;
+	-webkit-transition: width 0.5s; /* Safari */
+    transition: width 0.5s;
+	}
+
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+#park{background:url(../img/park-promo.png) top center no-repeat;background-size:cover}
+#square{background:#666}
+#garden{background:url(../img/garden-promo.png) top center no-repeat;background-size:cover}
+
+
+
+@media (max-width: 768px) {
+	
+	.site-wrapper ,.site-wrapper-active{width:100%}
+
+}
+
+@media (min-width: 992px) {
+}
